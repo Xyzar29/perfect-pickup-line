@@ -5,6 +5,8 @@
 // forgot the simplest part — saying hello. The twist is the gap between the
 // machine's power and its nerves, and it lands without setup, pressure, or
 // leering. One line, one breath.
+// The program enforces the 1-200 character single-line gate before writing,
+// then writes the line verbatim to $MAKEFUN_OUTPUT_DIR/entry.txt (no trailing newline).
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
